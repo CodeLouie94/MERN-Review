@@ -36,9 +36,26 @@ class Ninja {
     }
 }
 
-const ninja1 = new Ninja("Hyabusa");
-ninja1.sayName();
-ninja1.showStats();
-ninja1.drinkSake();
-ninja1.showStats();
+class Sensei extends Ninja{
+    constructor(name){
+        super(name)
+        this.health = 200;
+        this.speed = 10;
+        this.strength = 10;
+        this.wisdom = 10
+    }
 
+    speakWisdom(){
+        super.drinkSake()
+        console.log("one plus one equals two")
+    }
+
+}    
+
+
+
+const superSensei = new Sensei("Master Splinter");
+superSensei.sayName();
+superSensei.showStats();
+superSensei.speakWisdom();
+superSensei.showStats();
