@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+
+import FirstComponent from './components/firstComponent'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <li>Run a marathon</li>
         <li>Feed the dogs</li>
       </ul>
+
+      <FirstComponent/>
     </div>
   );
 }
