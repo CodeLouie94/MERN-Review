@@ -10,7 +10,6 @@ class Message extends Component {
         }
 
     }
-
     leaving = () => {
         if(this.state.message === "Yo this is a message from state"){
             this.setState({
