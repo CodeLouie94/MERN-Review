@@ -19,7 +19,7 @@ const Todo = props => {
                     <p>{props.todo}</p> :
                     <p style={{textDecoration: "line-through"}}>{props.todo}</p>
                 }
-                <input type="checkbox" onChange = {e => setDone(!done)}/>
+                <input type="checkbox" onChange = {() => setDone(!done)}/>
                 <input type = "submit" value = "Delete"/>
             </form>
         </div>

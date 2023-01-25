@@ -12,7 +12,7 @@ function App() {
   }
 
   const toDelete = id => {
-    setTodos(todos.filter(a => todos.indexOf(a) !== id))
+    setTodos(todos.filter(todo => todos.indexOf(todo) !== id))
   }
 
   return (
@@ -33,7 +33,6 @@ function App() {
         ))
       }
       </ul>
-      
     </div>
   );
 }
